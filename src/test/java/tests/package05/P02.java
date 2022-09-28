@@ -31,5 +31,6 @@ public class P02 extends TestBaseBeforeMethodAfterMethod {
         // istenenle beklenen ayni olursa Equals; iceriyor mu deseydi True False
 
 
+
     }
 }
