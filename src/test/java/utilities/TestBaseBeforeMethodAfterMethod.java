@@ -31,7 +31,7 @@ public abstract class TestBaseBeforeMethodAfterMethod {
 
     @AfterMethod
     public void tearDown() throws InterruptedException {
-      Thread.sleep(2000);
-       driver.quit();
+      // Thread.sleep(2000);
+       // driver.quit();
     }
 }
