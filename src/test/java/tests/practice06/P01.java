@@ -40,7 +40,7 @@ public class P01 {
            * 3. test class
            * utilities
 
-           *Aradigimiz bir web elementi ya da bir methodu kolaylikla bulabilmek ve update edebillmek icin
+           *Aradigimiz bir web elementi ya da bir methodu kolaylikla bulabilmek ve update edebilmek icin
            *javadan ogrenmis oldugumuz OOP Concept Selenium ile page object modelde birlestirilmis oluyor.
             */
 
