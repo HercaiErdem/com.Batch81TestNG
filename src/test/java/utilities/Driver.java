@@ -41,3 +41,7 @@ public class Driver {
         driver = null;
     }
 }
+
+//POM'da artik inheritance yerine object ve static kullanarak methodlara ulasiyoruz
+//page classina objeyle
+//driver classina static ile ulasiriz

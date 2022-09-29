@@ -1,4 +1,4 @@
-package tests.package05;
+package tests.ptactice05;
 
 import org.openqa.selenium.By;
 import org.testng.Assert;

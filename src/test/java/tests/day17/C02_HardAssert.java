@@ -9,11 +9,15 @@ import utilities.TestBaseBeforeMethodAfterMethod;
 
 public class C02_HardAssert extends TestBaseBeforeMethodAfterMethod {
 
-// Hard Assertions : JUNit'te öğrendiğimiz assertion ile aynıdır.  Assert.assertTrue();  Assert.assertFalse();  Assert.assertEquals();
-// Hard Assertions'da herhangi bir assertion failed olursa, test method'un çalışmasını durdurur ve kalan kodları yürütmez.(stop execution)
+// Hard Assertions : JUNit'te öğrendiğimiz assertion ile aynıdır.
+// Assert.assertTrue();  Assert.assertFalse();  Assert.assertEquals();
+// Hard Assertions'da herhangi bir assertion failed olursa,
+// test method'un çalışmasını durdurur ve kalan kodları yürütmez.(stop execution)
 
-// Soft Assert : Kullanabilmek için obje oluştururuz, oluşturduktan sonra obje ismi ile kullanırız, Herhangi bir hata verdiğinde test methodu
-// çalışmaya devam eder, en sonra rapor verir.    baslangıc  SoftAssert objeadı=new SoftAssert();  bitis objeadı.assertAll();
+// Soft Assert : Kullanabilmek için obje oluştururuz, oluşturduktan sonra obje ismi ile kullanırız,
+// Herhangi bir hata verdiğinde test methodu
+// çalışmaya devam eder, en sonda rapor verir. baslangıc  SoftAssert objeadı=new SoftAssert();
+// bitis objeadı.assertAll();
 
 
     @Test
@@ -23,7 +27,7 @@ public class C02_HardAssert extends TestBaseBeforeMethodAfterMethod {
         //2-title in Amazon içerdigini test edin
         Assert.assertTrue(driver.getTitle().contains("Amazon"));
         //3-arama kutusnun erişilebilir oldugunu tets edin
-        WebElement aramaKutusu= driver.findElement(By.id("//input[@id='twotabsearchtextbox']"));
+        WebElement aramaKutusu= driver.findElement(By.xpath("//input[@id='twotabsearchtextbox']"));
         Assert.assertTrue(aramaKutusu.isEnabled());
         //4-arama kutusuna Nuella yazıp aratın
         aramaKutusu.sendKeys("Nutella", Keys.ENTER);
