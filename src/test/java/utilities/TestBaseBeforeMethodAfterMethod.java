@@ -22,7 +22,7 @@ public abstract class TestBaseBeforeMethodAfterMethod {
         WebDriverManager.chromedriver().setup();
         driver = new ChromeDriver();
         driver.manage().window().maximize();
-        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(15));
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
 
         LocalDateTime date = LocalDateTime.now();
         DateTimeFormatter formater = DateTimeFormatter.ofPattern("YYMMddHmmss");

@@ -27,7 +27,6 @@ public class P01 extends TestBaseBeforeMethodAfterMethod {
         // go to url : https://www.techlistic.com/p/selenium-practice-form.html
         driver.get("https://www.techlistic.com/p/selenium-practice-form.html");
 //fill the firstname
-        //  Actions action =new Actions(driver);
         driver.findElement(By.xpath("//input[@name='firstname']")).sendKeys("Ayse");
 //fill the lastname
         driver.findElement(By.xpath("//input[@name='lastname']")).sendKeys("Can");
@@ -38,7 +37,7 @@ public class P01 extends TestBaseBeforeMethodAfterMethod {
 //fill the date
         driver.findElement(By.xpath("//input[@id='datepicker']")).sendKeys("28.09.2022");
 //choose your profession -> Automation Tester
-        driver.findElement(By.xpath("//input[@id='profession-1']")).click();;
+        driver.findElement(By.xpath("//input[@id='profession-1']")).click();
 //choose your tool -> Selenium Webdriver
         driver.findElement(By.xpath("//input[@id='tool-2']")).click();
 //choose your continent -> Antartica
