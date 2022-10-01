@@ -6,6 +6,8 @@ import org.openqa.selenium.support.PageFactory;
 import utilities.Driver;
 
 public class HotelMyCampPage {
+    public WebElement girisYapilamadi;
+
     public HotelMyCampPage (){
         PageFactory.initElements(Driver.getDriver(),this); // Burdaki driver ordaki driver
 
