@@ -1,4 +1,4 @@
-package tests.day20;
+package tests.day19;
 
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.interactions.Actions;
@@ -8,12 +8,11 @@ import pages.HmcPage;
 import utilities.ConfigReader;
 import utilities.Driver;
 
-public class C01_SmokePozitifTest {
-
+public class C03_PozitifTest {
     @Test
     public void pozitifTest() {
 
-//https://www.hotelmycamp.com/ adresine git  login butonuna bas
+        //https://www.hotelmycamp.com/ adresine git  login butonuna bas
         Driver.getDriver().get(ConfigReader.getProperty("hmcUrl"));
         HmcPage hmcPage = new HmcPage();
         /*Page class'ındaki locate'lerimize ulaşabilmek için
@@ -30,7 +29,6 @@ public class C01_SmokePozitifTest {
         //Degerleri girildiginde sayfaya basarili sekilde girilebildigini test et
         Assert.assertTrue(hmcPage.girisYapildi.isDisplayed());
         Driver.closeDriver();
-
 
     }
 }

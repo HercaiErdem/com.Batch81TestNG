@@ -4,7 +4,7 @@ import org.openqa.selenium.Keys;
 import org.openqa.selenium.interactions.Actions;
 import org.testng.Assert;
 import org.testng.annotations.Test;
-import pages.HotelMyCampPage;
+import pages.HmcPage;
 import utilities.ConfigReader;
 import utilities.Driver;
 
@@ -12,8 +12,8 @@ public class C03_ConfigReader {
     @Test
     public void test01() {
         //  https://www.hotelmycamp.com/ adresine git  login butonuna bas
-        Driver.getDriver().get(ConfigReader.getProperty("hotelMyCampUrl"));
-        HotelMyCampPage hotelMyCampPage = new HotelMyCampPage();
+        Driver.getDriver().get(ConfigReader.getProperty("hmcUrl"));
+        HmcPage hotelMyCampPage = new HmcPage();
         /*Page class'ındaki locate'lerimize ulaşabilmek için
         Page classımızdan bir obje oluşturarak, oluşturmuş olduğumuz obje ile
         page classımızdaki locate'lerimize ulaşabiliriz
@@ -21,7 +21,7 @@ public class C03_ConfigReader {
         hotelMyCampPage.login.click();
         //test data username: manager ,
         // test data password : Manager1!
-        hotelMyCampPage.userName.sendKeys(ConfigReader.getProperty("username"));
+        hotelMyCampPage.userName.sendKeys(ConfigReader.getProperty("user"));
         Actions actions = new Actions(Driver.getDriver());
         actions.sendKeys(Keys.TAB).sendKeys(ConfigReader.getProperty("password"))
                 .sendKeys(Keys.ENTER).perform();
