@@ -3,8 +3,8 @@
 <suite name="Istedigim Packagelari Calistirma">
     <test name="Package">
         <packages>
-            <package name="tests.practice06"></package>
-            <package name="tests.ptactice05"></package>
+            <package name="tests.practice06"/>
+            <package name="tests.ptactice05"/>
         </packages>
     </test>
 </suite>

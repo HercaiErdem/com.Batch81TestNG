@@ -1,0 +1,16 @@
+
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="Istedigim Methodlari Run Etmek">
+    <test name="Methodlar">
+        <classes>
+            <class name="tests.day17.C01_DependsOnMethods">
+                <methods>
+                    <exclude name="test04">
+
+                    </exclude>
+                </methods>
+            </class>
+            
+        </classes>
+    </test>
+</suite>
