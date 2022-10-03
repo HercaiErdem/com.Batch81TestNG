@@ -32,5 +32,8 @@ public class HmcPage {
     @FindBy(xpath = "//*[text()='OK']")
     public WebElement okButton;
 
+    @FindBy(xpath = "//*[@id='btnSubmit']")
+    public WebElement saveButonu;
+
 
 }

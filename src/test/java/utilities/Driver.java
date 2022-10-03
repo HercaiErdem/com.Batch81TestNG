@@ -34,8 +34,8 @@ public class Driver {
         if (driver == null) {
             switch (ConfigReader.getProperty("browser")) {
                 case "chrome":
-                    WebDriverManager.edgedriver().setup();
-                    driver = new EdgeDriver();
+                    WebDriverManager.chromedriver().setup();
+                    driver = new ChromeDriver();
                     break;
                 case "firefox":
                     WebDriverManager.firefoxdriver().setup();

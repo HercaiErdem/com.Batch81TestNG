@@ -20,6 +20,7 @@ public class C03_E2ETest {
         //Username textbox ve password metin kutularını locate edin ve asagidaki verileri
         //Username : manager
         //Password  : Manager1!
+
         //Login butonuna tıklayın.
         hmcPage.userName.sendKeys(ConfigReader.getProperty("user"));
         Actions actions = new Actions(Driver.getDriver());
@@ -36,14 +37,15 @@ public class C03_E2ETest {
         Faker faker = new Faker();
         hmcPage.idUser.sendKeys("manager");
         actions.sendKeys(Keys.TAB).sendKeys("Happy Hotel").
-                sendKeys(Keys.TAB).sendKeys("1500").sendKeys(Keys.TAB).sendKeys("10/02/2022")
-                .sendKeys(Keys.TAB).sendKeys(Keys.TAB).sendKeys("10/13/2022").
+                sendKeys(Keys.TAB).sendKeys("1500").sendKeys(Keys.TAB).sendKeys("10/12/2022")
+                .sendKeys(Keys.TAB).sendKeys(Keys.TAB).sendKeys("10/31/2022").
                 sendKeys(Keys.TAB).sendKeys(Keys.TAB).sendKeys("2").sendKeys(Keys.TAB).sendKeys("2")
                 .sendKeys(Keys.TAB).sendKeys(faker.name().fullName()).sendKeys(Keys.TAB).
                 sendKeys(faker.phoneNumber().cellPhone()).sendKeys(Keys.TAB)
                 .sendKeys(faker.internet().emailAddress()).sendKeys(Keys.TAB).sendKeys("skajdlaksjdaasd")
                 .sendKeys(Keys.TAB).sendKeys(Keys.SPACE).sendKeys(Keys.TAB).sendKeys(Keys.TAB)
                 .sendKeys(Keys.ENTER).perform();
+    //    hmcPage.saveButonu.click();
         //“RoomReservation was inserted successfully” textinin göründüğünü test edin.
         Thread.sleep(2000);
         Assert.assertTrue(hmcPage.roomReservationText.isDisplayed());
