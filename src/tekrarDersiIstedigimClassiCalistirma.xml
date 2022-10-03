@@ -1,8 +1,9 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
 <suite name="Istedigim Classi Calistirma">
-    <test name="Day19,C03 PozitifTest">
+    <test name="Day19,C03 PozitifTest, day16, C01">
         <classes>
             <class name="tests.day19.C03_PozitifTest"/>
+            <class name="tests.day16.C01_BeforeMethodAfterMethod"/>
         </classes>
     </test>
 </suite>
