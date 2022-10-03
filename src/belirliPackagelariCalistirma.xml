@@ -10,4 +10,9 @@
             <class name="tests.day19.C03_PozitifTest"/>
         </classes>
     </test>
+    <test name="Bu Sefer Class Run Edicem">
+        <classes>
+            <class name="tests.day16.C04_DependsOnMethod"/>
+        </classes>
+    </test>
 </suite>
