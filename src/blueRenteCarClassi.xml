@@ -1,0 +1,8 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="class">
+    <test name="Blue Renta Car Classi">
+        <classes>
+            <class name="tests.day22.C01RaporluTest"></class>
+        </classes>
+    </test>
+</suite>
