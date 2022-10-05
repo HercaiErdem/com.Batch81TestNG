@@ -5,7 +5,11 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import utilities.Driver;
 
+import java.util.List;
+
 public class HerOkuTestPage {
+
+    public WebElement onkeydown;
 
     public HerOkuTestPage() {
         PageFactory.initElements(Driver.getDriver(), this);
@@ -26,26 +30,27 @@ public class HerOkuTestPage {
     @FindBy(xpath = "//button[@id='onfocus']")
     public WebElement onfocus;
 
-    @FindBy(xpath = "//button[@id='onkeydown']")
-    public WebElement onkeydown;
+    @FindBy(xpath = ("//button[@id='onkeydown']"))
+    public WebElement keydown;
 
-    @FindBy(xpath = "//*[@id='onkeyup']")
-    public WebElement onkeyup;
+    @FindBy (xpath = ("//button[@id='onkeyup']"))
+    public WebElement keyup;
 
     @FindBy (xpath = ("//button[@id='onkeypress']"))
     public WebElement keypress;
 
-    @FindBy(xpath = "//button[@id='onmouseover']")
-    public WebElement omouseover;
+    @FindBy (xpath = ("//button[@id='onmouseover']"))
+    public WebElement mouseOver;
 
-    @FindBy(xpath = ("//button[@id='onmouseleave']"))
+    @FindBy (xpath = ("//button[@id='onmouseleave']"))
     public WebElement mouseLeave;
 
-    @FindBy(xpath = ("//button[@id='onmousedown']"))
+    @FindBy (xpath = ("//button[@id='onmousedown']"))
     public WebElement mouseDown;
 
-    @FindBy (xpath = "//p[text()='Event Triggered']")
-    public WebElement eventTriggered;
+    @FindBy (xpath = ("//*[.='Event Triggered']"))
+    public List<WebElement> eventTriggered;
+
 
 
 }

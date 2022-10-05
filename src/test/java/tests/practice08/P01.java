@@ -32,19 +32,26 @@ public class P01 {
         herOkuTestPage.onblur.click();
         herOkuTestPage.onclick.click();
         herOkuTestPage.onclick.click();
-        Thread.sleep(2000);
         actions.contextClick(herOkuTestPage.oncontextmenu).
                 doubleClick(herOkuTestPage.ondoubleclick).
                 click(herOkuTestPage.onfocus).
-                click(herOkuTestPage.onkeydown).sendKeys(Keys.ENTER). // klayve action inda sendKeys le yapiliyor
-                click(herOkuTestPage.onkeyup).sendKeys(Keys.ENTER).
-                click(herOkuTestPage.keypress).sendKeys(Keys.ENTER).
-                moveToElement(herOkuTestPage.mouseDown).  // mouse over --> mouse u uzerinde beklet
+                click(herOkuTestPage.keydown)
+                .sendKeys(Keys.ENTER). // klayve action inda sendKeys le yapiliyor
+                click(herOkuTestPage.keyup).
+                sendKeys(Keys.ENTER).
+                click(herOkuTestPage.keypress).
+                sendKeys(Keys.ENTER).
+                moveToElement(herOkuTestPage.mouseOver). // mouse over --> mouse u uzerinde beklet
                 moveToElement(herOkuTestPage.mouseLeave).
-                moveToElement(herOkuTestPage.mouseLeave).
+                moveToElement(herOkuTestPage.mouseOver).
                 click(herOkuTestPage.mouseDown).perform();
+        Thread.sleep(2000);
 
-        List<WebElement> clicked= (List<WebElement>) herOkuTestPage.eventTriggered;
-        Assert.assertEquals(clicked,11);
+    }
+    @Test (dependsOnMethods = "test01")
+    public void test02() {
+        List<WebElement> clicked = herOkuTestPage.eventTriggered;
+        Assert.assertEquals(clicked.size(), 11);
     }
 }
+
