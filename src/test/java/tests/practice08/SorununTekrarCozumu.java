@@ -1,11 +1,16 @@
 package tests.practice08;
 
 import org.openqa.selenium.Keys;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
+import org.testng.Assert;
 import org.testng.annotations.Test;
 import pages.HerOkuAppTekrarCozumuPage;
+import tests.day17.C01_DependsOnMethods;
 import utilities.ConfigReader;
 import utilities.Driver;
+
+import java.util.List;
 
 public class SorununTekrarCozumu {
 
@@ -35,6 +40,13 @@ actions.contextClick(herOkuAppTekrarCozumuPage.onContextMenu)
         .moveToElement(herOkuAppTekrarCozumuPage.onMouseLeave)
         .click(herOkuAppTekrarCozumuPage.onMouseDown)
         .click(herOkuAppTekrarCozumuPage.onMouseDown).perform();
+    }
+
+    @Test (dependsOnMethods = "test01")
+    public void test02() {
+
+        List<WebElement> clicked= herOkuAppTekrarCozumuPage.triggered;
+        Assert.assertEquals(clicked.size(),11);
 
     }
 }

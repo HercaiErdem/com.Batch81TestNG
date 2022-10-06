@@ -5,6 +5,8 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import utilities.Driver;
 
+import java.util.List;
+
 public class HerOkuAppTekrarCozumuPage {
 
     public HerOkuAppTekrarCozumuPage() {
@@ -47,4 +49,27 @@ public class HerOkuAppTekrarCozumuPage {
     @FindBy(xpath = "//button[@id='onmousedown']")
     public WebElement onMouseDown;
 
+    @FindBy(xpath = "//*[text()='Event Triggered']")
+    public List<WebElement>  triggered;
+
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
