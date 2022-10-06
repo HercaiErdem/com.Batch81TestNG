@@ -56,6 +56,8 @@ public class SearchProductTest extends TestBaseRapor {
          Assert.assertTrue(searchProductPage.blueTop.isDisplayed());
         extentTest.pass("Aramayla ilgili ürünün (\"blue top\") görünür olduğu doğrulandı");
 
+
+
     }
 
 

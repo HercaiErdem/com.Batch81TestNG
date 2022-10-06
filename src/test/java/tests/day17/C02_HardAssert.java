@@ -5,6 +5,7 @@ import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
 import org.testng.Assert;
 import org.testng.annotations.Test;
+import utilities.Driver;
 import utilities.TestBaseBeforeMethodAfterMethod;
 
 public class C02_HardAssert extends TestBaseBeforeMethodAfterMethod {
@@ -37,4 +38,5 @@ public class C02_HardAssert extends TestBaseBeforeMethodAfterMethod {
         //6-arama sonucunun Nutella içerdigini test edin
         Assert.assertTrue(sonuc.getText().contains("Nutella"));
     }
+
 }
