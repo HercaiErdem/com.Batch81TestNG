@@ -9,8 +9,6 @@ import java.util.List;
 
 public class HerOkuTestPage {
 
-    public WebElement onkeydown;
-
     public HerOkuTestPage() {
         PageFactory.initElements(Driver.getDriver(), this);
     }

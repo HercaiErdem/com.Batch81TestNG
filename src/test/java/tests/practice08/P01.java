@@ -44,7 +44,8 @@ public class P01 {
                 moveToElement(herOkuTestPage.mouseOver). // mouse over --> mouse u uzerinde beklet
                 moveToElement(herOkuTestPage.mouseLeave).
                 moveToElement(herOkuTestPage.mouseOver).
-                click(herOkuTestPage.mouseDown).perform();
+                click(herOkuTestPage.mouseDown)
+                .perform();
         Thread.sleep(2000);
 
     }
