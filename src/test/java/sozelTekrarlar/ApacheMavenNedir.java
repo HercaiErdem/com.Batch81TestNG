@@ -1,6 +1,6 @@
 package sozelTekrarlar;
 
-public class MavenVePomxmlNedir {
+public class ApacheMavenNedir {
 
     /*
     Herkese Merhabalar,
