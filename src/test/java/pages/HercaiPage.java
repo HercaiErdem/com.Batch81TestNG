@@ -34,7 +34,7 @@ public class HercaiPage {
     @FindBy(xpath = "(//*[.='Add New'])[1]")
     public WebElement addNew;
 
-    @FindBy(xpath = "(//div[@class='page_collapsible_content_holder'])[5]")
+    @FindBy(xpath = "(//*[@class='page_collapsible_content_holder'])[5]")
     public WebElement attributies;
 
     @FindBy(xpath = "//input[@id='attributes_is_active_1']")
