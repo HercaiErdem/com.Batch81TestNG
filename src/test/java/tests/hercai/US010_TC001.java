@@ -69,6 +69,7 @@ public class US010_TC001 {
         hercaiPage.attributies.click();
         //  jse.executeScript("arguments[0].scrollIntoView(true);", hercaiPage.attributies);
         // jse.executeScript("arguments[0].click();", hercaiPage.attributies);
+
         //Color yazısının yanındaki kutucuğa tıklanır
         hercaiPage.colorBox.click();
 
