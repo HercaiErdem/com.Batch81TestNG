@@ -40,9 +40,6 @@ public class HercaiPage {
     @FindBy(xpath = "//input[@id='attributes_is_active_1']")
     public WebElement colorBox;
 
-    @FindBy(xpath = "(//ul[@class='select2-selection__rendered'])[2]")
-    public WebElement colorBigBox;
-
     @FindBy(xpath = "(//button[text()='Select all'])[1]")
     public WebElement selectAll;
 

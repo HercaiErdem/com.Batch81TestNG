@@ -26,7 +26,6 @@ public class US010_TC001 {
     //Add New butonuna tıklanır
     //Aşağıda Attributes kutusuna tıklanır
     //Color yazısının yanındaki kutucuğa tıklanır
-    //Aşağı oka tıklanır
     //Select All kutusuna basılır
     //Tum renklerin seçildiği doğrulanır
     //SUBMIT butonuna tıklanır
@@ -73,8 +72,6 @@ public class US010_TC001 {
         //Color yazısının yanındaki kutucuğa tıklanır
         hercaiPage.colorBox.click();
 
-        //Aşağı oka tıklanır
-        hercaiPage.colorBigBox.click();
         //Select All kutusuna basılır
         hercaiPage.selectAll.click();
         //Tum renklerin seçildiği doğrulanır
