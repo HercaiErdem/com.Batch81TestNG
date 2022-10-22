@@ -55,7 +55,8 @@ public class HercaiPage {
     @FindBy(xpath = "(//ul[@class='select2-selection__rendered'])[3]")
     public WebElement sizeBuyukBox;
 
-
+    @FindBy(xpath = "(//*[text()='Stock status'])[1]")
+    public WebElement buYaziAttributeseTiklayabilmekIcinAlindi;
 
 
 

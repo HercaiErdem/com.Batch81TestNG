@@ -2,8 +2,10 @@ package tests.hercai;
 
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.Keys;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import org.testng.annotations.Test;
@@ -11,6 +13,8 @@ import pages.HercaiPage;
 import utilities.Driver;
 
 import java.time.Duration;
+import java.util.ArrayList;
+import java.util.List;
 
 public class US010_TC002 {
     //Belirtilen URL` ye gidilir
@@ -36,6 +40,7 @@ public class US010_TC002 {
     WebDriverWait wait = new WebDriverWait(Driver.getDriver(), Duration.ofSeconds(10));
     JavascriptExecutor jse = (JavascriptExecutor) Driver.getDriver();
     Actions actions = new Actions(Driver.getDriver());
+
 
     @Test
     public void test02() {
@@ -63,8 +68,11 @@ public class US010_TC002 {
         //Aşağıda Attributes kutusuna tıklanır
         Driver.getDriver().navigate().refresh();
         wait.until(ExpectedConditions.visibilityOf(hercaiPage.attributies));
-        actions.sendKeys(Keys.PAGE_DOWN).sendKeys(Keys.PAGE_DOWN).perform();
-        hercaiPage.attributies.click();
+       // actions.sendKeys(Keys.PAGE_DOWN).sendKeys(Keys.PAGE_DOWN)
+         //       .sendKeys(Keys.PAGE_DOWN).perform();
+      //  hercaiPage.attributies.click();
+        jse.executeScript("arguments[0].scrollIntoView(true);",hercaiPage.buYaziAttributeseTiklayabilmekIcinAlindi);
+        jse.executeScript("arguments[0].click();",hercaiPage.attributies);
         //Color yazısının yanındaki kutucuğa tıklanır
         hercaiPage.colorBox.click();
         //Select All kutusuna basılır
@@ -75,11 +83,20 @@ public class US010_TC002 {
         //Size yazısının yanındaki kutucuğa tıklanır
         hercaiPage.sizeKucukBox.click();
         //Sırayla small, medium, large, extra large seçilir
+        //    List<WebElement> size= new ArrayList<>();
+        // for (WebElement w: size) {
+        //     select.selectByVisibleText("");
+        Select select = new Select(hercaiPage.sizeBuyukBox);
+        select.selectByVisibleText("small");
+        select.selectByVisibleText("medium");
+        select.selectByVisibleText("large");
+        select.selectByVisibleText("extra large");
 
         //small, medium, large, extra large seçildiği doğrulanır
+        Assert.assertTrue(hercaiPage.singinIkınci.isDisplayed());
 
 
     }
-
-
 }
+
+// }
