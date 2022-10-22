@@ -46,41 +46,54 @@ public class US010_TC002 {
     public void test02() throws InterruptedException {
         //Belirtilen URL` ye gidilir
         Driver.getDriver().get("https://allovercommerce.com/");
+
         //Sing in butonuna tıklanır
         hercaiPage.singin.click();
+
         //Username or email adress bölümüne vendor email girilir
         hercaiPage.email.sendKeys("grup20.testng@gmail.com");
+
         //Password girilir
         hercaiPage.password.sendKeys("Vendor20.,");
+
         //Sing In butonuna tıklanır
         hercaiPage.singinIkınci.click();
+
         //Sayfanın altından My Account butonuna tıklanır
         Driver.getDriver().navigate().refresh();
         wait.until(ExpectedConditions.visibilityOf(hercaiPage.myAccount));
         actions.sendKeys(Keys.PAGE_DOWN);
         jse.executeScript("arguments[0].scrollIntoView(true);", hercaiPage.myAccount);
         jse.executeScript("arguments[0].click();", hercaiPage.myAccount);
+
         //Store Manager bölümüne tıklanır
         hercaiPage.storeManager.click();
+
         //Products yazısına tıklanır
         hercaiPage.products.click();
+
         //Add New butonuna tıklanır
         hercaiPage.addNew.click();
+
         //Aşağıda Attributes kutusuna tıklanır
         Driver.getDriver().navigate().refresh();
         wait.until(ExpectedConditions.visibilityOf(hercaiPage.attributies));
         actions.sendKeys(Keys.PAGE_DOWN).perform();
         Thread.sleep(2000);
         hercaiPage.attributies.click();
+
         //Color yazısının yanındaki kutucuğa tıklanır
         hercaiPage.colorBox.click();
+
         //Select All kutusuna basılır
         hercaiPage.selectAll.click();
+
         //Tum renklerin seçildiği doğrulanır
         //  wait.until(ExpectedConditions.visibilityOf(hercaiPage.allColorSelected));
         // Assert.assertTrue(hercaiPage.allColorSelected.isDisplayed());
         List<WebElement> acutualColorResult = hercaiPage.allColorSelected;
         Assert.assertTrue(acutualColorResult.size() > 0);
+
         //Size yazısının yanındaki kutucuğa tıklanır
         hercaiPage.sizeKucukBox.click();
 
