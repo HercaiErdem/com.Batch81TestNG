@@ -32,7 +32,7 @@ public class US020_TC001 {
     JavascriptExecutor jse = (JavascriptExecutor) Driver.getDriver();
 
     @Test
-    public void test01() {
+    public void test01() throws InterruptedException {
         // Belirtilen URL` ye gidilir
         Driver.getDriver().get("https://allovercommerce.com/");
         //"Sing in" butonuna tıklanır
@@ -54,10 +54,12 @@ public class US020_TC001 {
         wait.until(ExpectedConditions.visibilityOf(hercaiPage.reviewsYazisi));
         jse.executeScript("arguments[0].scrollIntoView(true);", hercaiPage.reviewsYazisi);
         jse.executeScript("arguments[0].click();", hercaiPage.reviewsYazisi);
+        hercaiPage.reviewsYazisi.click();
         //Products Reviews kutucuğuna tıklanır
         hercaiPage.productsReviews.click();
-        //"tarikcustomer
+        Thread.sleep(3000);
         //trkklckya@hotmail.com yazısının gözüktüğü doğrulanır"
+
         //kullanışlı ve rahat bir ürün, teşekkür ederim. yazının göründüğü doğrulanır
 
 

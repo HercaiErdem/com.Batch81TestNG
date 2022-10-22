@@ -43,7 +43,7 @@ public class US010_TC002 {
 
 
     @Test
-    public void test02() {
+    public void test02() throws InterruptedException {
         //Belirtilen URL` ye gidilir
         Driver.getDriver().get("https://allovercommerce.com/");
         //Sing in butonuna tıklanır
@@ -57,6 +57,7 @@ public class US010_TC002 {
         //Sayfanın altından My Account butonuna tıklanır
         Driver.getDriver().navigate().refresh();
         wait.until(ExpectedConditions.visibilityOf(hercaiPage.myAccount));
+        actions.sendKeys(Keys.PAGE_DOWN);
         jse.executeScript("arguments[0].scrollIntoView(true);", hercaiPage.myAccount);
         jse.executeScript("arguments[0].click();", hercaiPage.myAccount);
         //Store Manager bölümüne tıklanır
@@ -68,11 +69,9 @@ public class US010_TC002 {
         //Aşağıda Attributes kutusuna tıklanır
         Driver.getDriver().navigate().refresh();
         wait.until(ExpectedConditions.visibilityOf(hercaiPage.attributies));
-       // actions.sendKeys(Keys.PAGE_DOWN).sendKeys(Keys.PAGE_DOWN)
-         //       .sendKeys(Keys.PAGE_DOWN).perform();
-      //  hercaiPage.attributies.click();
-        jse.executeScript("arguments[0].scrollIntoView(true);",hercaiPage.buYaziAttributeseTiklayabilmekIcinAlindi);
-        jse.executeScript("arguments[0].click();",hercaiPage.attributies);
+        actions.sendKeys(Keys.PAGE_DOWN).perform();
+        Thread.sleep(2000);
+        hercaiPage.attributies.click();
         //Color yazısının yanındaki kutucuğa tıklanır
         hercaiPage.colorBox.click();
         //Select All kutusuna basılır
