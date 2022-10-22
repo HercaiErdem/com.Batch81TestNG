@@ -17,24 +17,6 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class US010_TC002 {
-    //Belirtilen URL` ye gidilir
-    //Sing in butonuna tıklanır
-    //Username or email adress bölümüne vendor email girilir
-    //Password girilir
-    //Sing In butonuna tıklanır
-    //Sayfanın altından My Account butonuna tıklanır
-    //Store Manager bölümüne tıklanır
-    //Products yazısına tıklanır
-    //Add New butonuna tıklanır
-    //Aşağıda Attributes kutusuna tıklanır
-    //Color yazısının olduğu doğrulanır
-    //Color yazısının yanındaki kutucuğa tıklanır
-    //Select All kutusuna basılır
-    //Tum renklerin seçildiği doğrulanır
-    //Size yazısının göründüğü doğrulanır
-    //Size yazısının yanındaki kutucuğa tıklanır
-    //Select All kutusuna basılır
-    //small, medium, large, extra large seçildiği doğrulanır
 
     HercaiPage hercaiPage = new HercaiPage();
     WebDriverWait wait = new WebDriverWait(Driver.getDriver(), Duration.ofSeconds(10));
