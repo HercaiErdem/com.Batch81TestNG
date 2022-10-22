@@ -59,8 +59,11 @@ public class HercaiPage {
     public WebElement buYaziAttributeseTiklayabilmekIcinAlindi;
 
 
+    @FindBy(xpath = "(//span[@class='text'])[16]")
+    public WebElement reviewsYazisi;
 
-
+    @FindBy(xpath = "//span[.='Product Reviews']")
+    public WebElement productsReviews;
 
 
 

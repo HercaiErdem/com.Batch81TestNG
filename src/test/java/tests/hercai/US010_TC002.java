@@ -83,6 +83,8 @@ public class US010_TC002 {
         //Size yazısının yanındaki kutucuğa tıklanır
         hercaiPage.sizeKucukBox.click();
         //Sırayla small, medium, large, extra large seçilir
+
+        //--------------SOR------------------------------------
         //    List<WebElement> size= new ArrayList<>();
         // for (WebElement w: size) {
         //     select.selectByVisibleText("");

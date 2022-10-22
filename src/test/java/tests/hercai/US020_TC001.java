@@ -49,8 +49,13 @@ public class US020_TC001 {
         jse.executeScript("arguments[0].scrollIntoView(true);", hercaiPage.myAccount);
         jse.executeScript("arguments[0].click();", hercaiPage.myAccount);
         //"Store Manager" butonuna tıklanır
+        hercaiPage.storeManager.click();
         //Reviews butonuna tıklanır
+        wait.until(ExpectedConditions.visibilityOf(hercaiPage.reviewsYazisi));
+        jse.executeScript("arguments[0].scrollIntoView(true);", hercaiPage.reviewsYazisi);
+        jse.executeScript("arguments[0].click();", hercaiPage.reviewsYazisi);
         //Products Reviews kutucuğuna tıklanır
+        hercaiPage.productsReviews.click();
         //"tarikcustomer
         //trkklckya@hotmail.com yazısının gözüktüğü doğrulanır"
         //kullanışlı ve rahat bir ürün, teşekkür ederim. yazının göründüğü doğrulanır
