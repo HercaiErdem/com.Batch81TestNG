@@ -77,27 +77,28 @@ public class US010_TC002 {
         //Select All kutusuna basılır
         hercaiPage.selectAll.click();
         //Tum renklerin seçildiği doğrulanır
-        wait.until(ExpectedConditions.visibilityOf(hercaiPage.allColorSelected));
-        Assert.assertTrue(hercaiPage.allColorSelected.isDisplayed());
+        //  wait.until(ExpectedConditions.visibilityOf(hercaiPage.allColorSelected));
+        // Assert.assertTrue(hercaiPage.allColorSelected.isDisplayed());
+        List<WebElement> acutualColorResult = hercaiPage.allColorSelected;
+        Assert.assertTrue(acutualColorResult.size() > 0);
         //Size yazısının yanındaki kutucuğa tıklanır
         hercaiPage.sizeKucukBox.click();
-        //Sırayla small, medium, large, extra large seçilir
 
-        //--------------SOR------------------------------------
-        //    List<WebElement> size= new ArrayList<>();
-        // for (WebElement w: size) {
-        //     select.selectByVisibleText("");
-        Select select = new Select(hercaiPage.sizeBuyukBox);
-        select.selectByVisibleText("small");
-        select.selectByVisibleText("medium");
-        select.selectByVisibleText("large");
-        select.selectByVisibleText("extra large");
+        //Sırayla small, medium, large, extra large seçilir
+        hercaiPage.sizeSelectAllButton.click();
+        // Select select = new Select(hercaiPage.sizeBuyukBox);
+        //  select.selectByVisibleText("small");
+        // select.selectByVisibleText("medium");
+        //select.selectByVisibleText("large");
+        //select.selectByVisibleText("extra large");
 
         //small, medium, large, extra large seçildiği doğrulanır
-        Assert.assertTrue(hercaiPage.singinIkınci.isDisplayed());
+        //  Assert.assertTrue(hercaiPage.singinIkınci.isDisplayed());
+        List<WebElement> actualSizeResult = hercaiPage.sizeDogrulamaninYapildigiBox;
+        Assert.assertTrue(actualSizeResult.size() > 0);
 
 
     }
 }
 
-// }
+
