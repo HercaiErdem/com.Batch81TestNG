@@ -33,7 +33,7 @@ public class US010_TC002 {
     //Tum renklerin seçildiği doğrulanır
     //Size yazısının göründüğü doğrulanır
     //Size yazısının yanındaki kutucuğa tıklanır
-    //Sırayla small, medium, large, extra large seçilir
+    //Select All kutusuna basılır
     //small, medium, large, extra large seçildiği doğrulanır
 
     HercaiPage hercaiPage = new HercaiPage();
@@ -97,7 +97,7 @@ public class US010_TC002 {
         //Size yazısının yanındaki kutucuğa tıklanır
         hercaiPage.sizeKucukBox.click();
 
-        //Sırayla small, medium, large, extra large seçilir
+        //Select All kutusuna basılır
         hercaiPage.sizeSelectAllButton.click();
         // Select select = new Select(hercaiPage.sizeBuyukBox);
         //  select.selectByVisibleText("small");
