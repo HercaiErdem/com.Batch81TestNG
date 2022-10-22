@@ -72,9 +72,10 @@ public class US010_TC002 {
         //Tum renklerin seçildiği doğrulanır
         wait.until(ExpectedConditions.visibilityOf(hercaiPage.allColorSelected));
         Assert.assertTrue(hercaiPage.allColorSelected.isDisplayed());
-        //Size yazısının göründüğü doğrulanır
         //Size yazısının yanındaki kutucuğa tıklanır
+        hercaiPage.sizeKucukBox.click();
         //Sırayla small, medium, large, extra large seçilir
+
         //small, medium, large, extra large seçildiği doğrulanır
 
 

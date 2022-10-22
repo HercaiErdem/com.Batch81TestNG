@@ -49,14 +49,11 @@ public class HercaiPage {
     @FindBy(xpath = "//input[@id='wcfm_products_simple_submit_button']")
     public WebElement submitButton;
 
+    @FindBy(xpath = "//input[@id='attributes_is_active_2']")
+    public WebElement sizeKucukBox;
 
-
-
-
-
-
-
-
+    @FindBy(xpath = "(//ul[@class='select2-selection__rendered'])[3]")
+    public WebElement sizeBuyukBox;
 
 
 
