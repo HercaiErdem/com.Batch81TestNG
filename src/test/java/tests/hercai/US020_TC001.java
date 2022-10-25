@@ -60,7 +60,7 @@ public class US020_TC001 {
         wait.until(ExpectedConditions.visibilityOf(hercaiPage.productsReviews));
         hercaiPage.productsReviews.click();
 
-        //Kullanıcı email yazısının gözüktüğü doğrulanır
+        //Kullanıcı email yazısının göründüğü doğrulanır
         Assert.assertTrue(hercaiPage.userEmail.isDisplayed());
 
         //Kullanıcının comment yazının göründüğü doğrulanır

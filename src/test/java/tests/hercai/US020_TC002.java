@@ -47,10 +47,10 @@ public class US020_TC002 {
         wait.until(ExpectedConditions.visibilityOf(hercaiPage.productsReviews));
         hercaiPage.productsReviews.click();
 
-        //RATE I SOR
+        // Kullanıcının ürüne verdiği derece (rating) verdiği doğrulanır
         Assert.assertTrue(hercaiPage.rating.isDisplayed());
 
-        //19 October 2022 13:13 yazısını  göründüğü doğrulanır
+        // Kullanıcının ürüne yaptığı yorumun tarihi (dated) göründüğü doğrulanır
         Assert.assertTrue(hercaiPage.dated.isDisplayed());
 
     }
