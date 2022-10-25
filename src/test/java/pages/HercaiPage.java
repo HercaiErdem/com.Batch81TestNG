@@ -69,6 +69,12 @@ public class HercaiPage {
     @FindBy(xpath = "(//span[@class='text'])[18]")
     public WebElement productsReviews;
 
+    @FindBy (xpath = "//div[@class='wcfmmp-author-meta']")
+    public WebElement userEmail;
+
+    @FindBy (xpath = "//div[@class='wcfmmp-comments-content']")
+    public WebElement userComment;
+
 
 
 

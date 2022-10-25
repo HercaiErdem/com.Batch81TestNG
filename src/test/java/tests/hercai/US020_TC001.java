@@ -5,6 +5,7 @@ import org.openqa.selenium.Keys;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.Assert;
 import org.testng.annotations.Test;
 import pages.HercaiPage;
 import utilities.Driver;
@@ -60,8 +61,10 @@ public class US020_TC001 {
         hercaiPage.productsReviews.click();
 
         //trkklckya@hotmail.com yazısının gözüktüğü doğrulanır"
+        Assert.assertTrue(hercaiPage.userEmail.isDisplayed());
 
         //kullanışlı ve rahat bir ürün, teşekkür ederim. yazının göründüğü doğrulanır
+        Assert.assertTrue(hercaiPage.userComment.isDisplayed());
 
 
     }
