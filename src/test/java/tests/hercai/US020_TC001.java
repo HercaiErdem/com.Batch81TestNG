@@ -60,10 +60,10 @@ public class US020_TC001 {
         wait.until(ExpectedConditions.visibilityOf(hercaiPage.productsReviews));
         hercaiPage.productsReviews.click();
 
-        //trkklckya@hotmail.com yazısının gözüktüğü doğrulanır"
+        //Kullanıcı email yazısının gözüktüğü doğrulanır
         Assert.assertTrue(hercaiPage.userEmail.isDisplayed());
 
-        //kullanışlı ve rahat bir ürün, teşekkür ederim. yazının göründüğü doğrulanır
+        //Kullanıcının comment yazının göründüğü doğrulanır
         Assert.assertTrue(hercaiPage.userComment.isDisplayed());
 
 
