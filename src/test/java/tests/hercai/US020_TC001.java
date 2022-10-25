@@ -51,13 +51,14 @@ public class US020_TC001 {
         //"Store Manager" butonuna tıklanır
         hercaiPage.storeManager.click();
         //Reviews butonuna tıklanır
-        wait.until(ExpectedConditions.visibilityOf(hercaiPage.reviewsYazisi));
         jse.executeScript("arguments[0].scrollIntoView(true);", hercaiPage.reviewsYazisi);
         jse.executeScript("arguments[0].click();", hercaiPage.reviewsYazisi);
-        hercaiPage.reviewsYazisi.click();
+        wait.until(ExpectedConditions.visibilityOf(hercaiPage.reviewsYazisi));
+
         //Products Reviews kutucuğuna tıklanır
+        wait.until(ExpectedConditions.visibilityOf(hercaiPage.productsReviews));
         hercaiPage.productsReviews.click();
-        Thread.sleep(3000);
+
         //trkklckya@hotmail.com yazısının gözüktüğü doğrulanır"
 
         //kullanışlı ve rahat bir ürün, teşekkür ederim. yazının göründüğü doğrulanır

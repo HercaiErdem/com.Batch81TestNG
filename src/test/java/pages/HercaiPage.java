@@ -56,17 +56,19 @@ public class HercaiPage {
 
     @FindBy(xpath = "(//button[@class='button wcfm_add_attribute_term wcfm_select_all_attributes'])[2]")
     public WebElement sizeSelectAllButton;
+    @FindBy(xpath = "(//ul[@class='select2-selection__rendered'])[3]")
+    public List<WebElement> sizeDogrulamaninYapildigiBox;
 
 
-//US020 in locate leri
+
+
+    //US020 in locate leri
     @FindBy(xpath = "(//span[@class='text'])[16]")
     public WebElement reviewsYazisi;
 
-    @FindBy(xpath = "//span[.='Product Reviews']")
+    @FindBy(xpath = "(//span[@class='text'])[18]")
     public WebElement productsReviews;
 
-    @FindBy(xpath = "(//ul[@class='select2-selection__rendered'])[3]")
-    public List<WebElement> sizeDogrulamaninYapildigiBox;
 
 
 
