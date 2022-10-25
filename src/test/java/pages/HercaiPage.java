@@ -75,6 +75,12 @@ public class HercaiPage {
     @FindBy (xpath = "//div[@class='wcfmmp-comments-content']")
     public WebElement userComment;
 
+    @FindBy (xpath = "//*[@style='width:100%']")
+    public  WebElement rating;
+
+    @FindBy (xpath = "//td[.='19 October 2022 13:13']")
+    public  WebElement dated;
+
 
 
 
