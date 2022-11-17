@@ -1,10 +1,8 @@
 package sozelTekrarlar;
 
-public class PomxmlNedir {
-
-    // Pom.xml Dosyasi(File) Nedir
-    /*
-   *Pom.xml, Maven projesindeki en önemli dosyadır
+    Pom.xml Dosyasi(File) Nedir
+    
+ *Pom.xml, Maven projesindeki en önemli dosyadır
 *Pom dosyasını kullanmamızın sebebi, bu dosyaya eklediğimiz
  Dependencies’i yönetmek içindir. Pom, ayrıca  artifact id, group id,
  ve version gibi proje bilgilerine de sahiptir.
