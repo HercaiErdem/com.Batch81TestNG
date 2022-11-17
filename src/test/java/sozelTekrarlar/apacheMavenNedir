@@ -1,7 +1,5 @@
 package sozelTekrarlar;
 
-public class ApacheMavenNedir {
-
     Maven Nedir?
 
     * Maven, daha iyi proje yönetimi(effective project management) için aynı anda birkaç proje inşa etmek(build),

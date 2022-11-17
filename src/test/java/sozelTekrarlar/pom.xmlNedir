@@ -20,13 +20,3 @@ fark nedir; Maven, proje otomasyon ve yönetim aracıdır (automation and manage
 pom ise bir xml dosyasıdır(FILE). Pom.xml maven'in bir parçasıdır ve pom
 dependencies’i yönetir.
 
-
-
-
-
-
-
-     */
-
-
-}
