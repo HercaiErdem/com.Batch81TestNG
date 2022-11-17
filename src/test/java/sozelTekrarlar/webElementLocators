@@ -1,9 +1,5 @@
 package sozelTekrarlar;
 
-    Hello Everyone,
-    Today, I would like to answer a few of the most common questions regarding 'Web Element Locators',
-    which is a significant topic for QAs.
-
     Q1) How many types of locators in Selenium?
     Answer; Selenium supports 8 different types of locators
     1)id,
