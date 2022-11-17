@@ -1,9 +1,7 @@
 package sozelTekrarlar;
 
-public class Singleton_Pattern_Nedir {
+     Singleton Pattern (Tekli Kullanim)
 
-    // Singleton Pattern (Tekli Kullanim)
-    /*
     ->Singleton pattern(tekli kullanım) ile herhangi bir Java classindan obje kullanımını
     sınırlayabiliriz.
     ->Singleton, bir class'ın yalnızca tek bir instance'a sahip olmasını sağlarken
@@ -15,7 +13,3 @@ public class Singleton_Pattern_Nedir {
      bellek kullanımı için de faydalıdır.
 
 
-     */
-
-
-}
