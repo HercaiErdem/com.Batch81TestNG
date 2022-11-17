@@ -31,8 +31,6 @@ public class ApacheMavenNedir {
     *Maven, dependencylerle ilgili mevcut jar dosyalarını otomatik olarak indirmesi
     *Birden fazla IDE (intelliJ, eclipse, vb.) ve araçlarla(tools) çalışması
     *Yeniliklere geçişinin kolay olması. O yüzden de Tekrarlanabilir derlemeler / yürütmeleri yapmak daha basittir.
-
-
      */
 
 
