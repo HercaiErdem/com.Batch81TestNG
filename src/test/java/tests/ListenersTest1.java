@@ -1,9 +1,7 @@
 package tests;
 
-import org.testng.Assert;
-import org.testng.SkipException;
-import org.testng.annotations.Listeners;
-import org.testng.annotations.Test;
+import org.testng.*;
+import org.testng.annotations.*;
 
 //TEST CLASS
 //Test class i Utility classa baglamak icin @Listeners annotation u kullanilir
