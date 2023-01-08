@@ -1,17 +1,13 @@
 package tests.hercai;
 
-import org.openqa.selenium.JavascriptExecutor;
-import org.openqa.selenium.Keys;
-import org.openqa.selenium.interactions.Actions;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
-import org.testng.Assert;
-import org.testng.annotations.Test;
-import pages.HercaiPage;
-import utilities.ConfigReader;
-import utilities.Driver;
-
-import java.time.Duration;
+import org.openqa.selenium.*;
+import org.openqa.selenium.interactions.*;
+import org.openqa.selenium.support.ui.*;
+import org.testng.*;
+import org.testng.annotations.*;
+import pages.*;
+import utilities.*;
+import java.time.*;
 
 public class US020_TC002 {
     HercaiPage hercaiPage = new HercaiPage();
