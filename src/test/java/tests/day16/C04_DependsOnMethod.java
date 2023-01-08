@@ -1,12 +1,9 @@
 package tests.day16;
 
-import org.openqa.selenium.By;
-import org.openqa.selenium.Keys;
-import org.openqa.selenium.WebElement;
-import org.testng.Assert;
-import org.testng.annotations.Test;
-import utilities.TestBaseBeforeClassAfterClass;
-import utilities.TestBaseBeforeMethodAfterMethod;
+import org.openqa.selenium.*;
+import org.testng.*;
+import org.testng.annotations.*;
+import utilities.*;
 
 public class C04_DependsOnMethod extends
         TestBaseBeforeClassAfterClass {
