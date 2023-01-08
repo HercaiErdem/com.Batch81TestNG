@@ -1,19 +1,14 @@
 package tests.hercai;
 
-import org.openqa.selenium.JavascriptExecutor;
-import org.openqa.selenium.Keys;
-import org.openqa.selenium.WebElement;
-import org.openqa.selenium.interactions.Actions;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
-import org.testng.Assert;
-import org.testng.annotations.Test;
-import pages.HercaiPage;
-import utilities.Driver;
-import utilities.TestBaseRapor;
-
-import java.time.Duration;
-import java.util.List;
+import org.openqa.selenium.*;
+import org.openqa.selenium.interactions.*;
+import org.openqa.selenium.support.ui.*;
+import org.testng.*;
+import org.testng.annotations.*;
+import pages.*;
+import utilities.*;
+import java.time.*;
+import java.util.*;
 
 public class US010_TC001 extends TestBaseRapor {
 
