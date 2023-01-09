@@ -1,11 +1,9 @@
 package pages;
 
-import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.FindBy;
-import org.openqa.selenium.support.PageFactory;
-import utilities.Driver;
-
-import java.util.List;
+import org.openqa.selenium.*;
+import org.openqa.selenium.support.*;
+import utilities.*;
+import java.util.*;
 
 public class WebUniversityPage {
 
