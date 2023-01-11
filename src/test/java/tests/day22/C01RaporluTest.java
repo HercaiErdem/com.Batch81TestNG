@@ -1,14 +1,11 @@
 package tests.day22;
 
-import org.openqa.selenium.Keys;
-import org.openqa.selenium.interactions.Actions;
-import org.testng.Assert;
-import org.testng.annotations.Test;
-import pages.BrcPage;
-import utilities.ConfigReader;
-import utilities.Driver;
-import utilities.TestBaseRapor;
-
+import org.openqa.selenium.*;
+import org.openqa.selenium.interactions.*;
+import org.testng.*;
+import org.testng.annotations.*;
+import pages.*;
+import utilities.*;
 public class C01RaporluTest extends TestBaseRapor {
     /*
     -https://www.bluerentalcars.com/ adresine git
