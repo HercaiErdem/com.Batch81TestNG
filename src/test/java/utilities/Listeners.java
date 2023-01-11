@@ -1,8 +1,8 @@
 package utilities;
-import org.testng.ITestContext;
-import org.testng.ITestListener;
-import org.testng.ITestResult;
-import java.io.IOException;
+
+import org.testng.*;
+import java.io.*;
+
 //UTILITY CLASS
 public class Listeners implements ITestListener {
     @Override
