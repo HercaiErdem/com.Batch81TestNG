@@ -6,6 +6,7 @@ import org.testng.*;
 import org.testng.annotations.*;
 import pages.*;
 import utilities.*;
+
 public class C01RaporluTest extends TestBaseRapor {
     /*
     -https://www.bluerentalcars.com/ adresine git
@@ -45,15 +46,16 @@ public class C01RaporluTest extends TestBaseRapor {
         String expectedUserName= "John Walker";
         Assert.assert.Equals(expectedUserName,actualUserName );
          */
-        //eğer hata raporu alırsak ve raporda resmi görüntülemek istersek rapor üzerine sağ click
-        //open, explorer secip resimli raporu görüntüleyebiliriz.
-        /*
-Hatanin resmini RAPORDA görmek istersek  target altinda Rapor icinde yazdirilan resmin uzernie sag tiklayin --->
-Open in --> uzerine gelin -->  Explorer tiklayin bilgisayardaki dosyaninzin icine yönleneceksiniz
-oradan raporu cift tiklayin acilan yeni sayfada alta kucuk resim var uzerini tiklayin
-ve karsimiza resim cikmis olacak .
 
- */
+        //eğer hata raporu alırsak ve raporda resmi görüntülemek istersek rapor üzerine sağ click
+         //open, explorer secip resimli raporu görüntüleyebiliriz.
+
+        /*
+    Hatanin resmini RAPORDA görmek istersek  target altinda Rapor icinde yazdirilan resmin uzernie sag tiklayin --->
+    Open in --> uzerine gelin -->  Explorer tiklayin bilgisayardaki dosyaninzin icine yönleneceksiniz
+    oradan raporu cift tiklayin acilan yeni sayfada alta kucuk resim var uzerini tiklayin
+    ve karsimiza resim cikmis olacak.
+          */
 
     }
 }
