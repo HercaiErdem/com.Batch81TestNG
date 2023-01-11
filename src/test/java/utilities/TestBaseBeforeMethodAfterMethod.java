@@ -1,15 +1,11 @@
 package utilities;
 
-import io.github.bonigarcia.wdm.WebDriverManager;
-
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
-import org.testng.annotations.AfterMethod;
-import org.testng.annotations.BeforeMethod;
-
-import java.time.Duration;
-import java.time.LocalDateTime;
-import java.time.format.DateTimeFormatter;
+import io.github.bonigarcia.wdm.*;
+import org.openqa.selenium.*;
+import org.openqa.selenium.chrome.*;
+import org.testng.annotations.*;
+import java.time.*;
+import java.time.format.*;
 
 public abstract class TestBaseBeforeMethodAfterMethod {
 
