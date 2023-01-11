@@ -1,12 +1,11 @@
 package tests.day19;
 
-import org.openqa.selenium.Keys;
-import org.openqa.selenium.interactions.Actions;
-import org.testng.Assert;
-import org.testng.annotations.Test;
-import pages.HmcPage;
-import utilities.ConfigReader;
-import utilities.Driver;
+import org.openqa.selenium.*;
+import org.openqa.selenium.interactions.*;
+import org.testng.*;
+import org.testng.annotations.*;
+import pages.*;
+import utilities.*;
 
 public class C02_NegatifTest {
     @Test
