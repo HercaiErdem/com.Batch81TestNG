@@ -1,10 +1,10 @@
 package tests.review;
 
-import org.openqa.selenium.Keys;
-import org.testng.Assert;
-import org.testng.annotations.Test;
-import pages.TrendyolPage;
-import utilities.Driver;
+import org.openqa.selenium.*;
+import org.testng.*;
+import org.testng.annotations.*;
+import pages.*;
+import utilities.*;
 
 public class TrendyolNegatifTest {
     @Test
