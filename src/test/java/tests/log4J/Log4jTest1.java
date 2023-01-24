@@ -1,8 +1,7 @@
 package tests.log4J;
 
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
-import org.testng.annotations.Test;
+import org.apache.logging.log4j.*;
+import org.testng.annotations.*;
 
 public class Log4jTest1 {
     private static Logger logger = LogManager.getLogger(Log4jTest1.class.getName());
