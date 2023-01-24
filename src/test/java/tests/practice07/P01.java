@@ -1,16 +1,12 @@
 package tests.practice07;
 
-import org.openqa.selenium.Keys;
-import org.openqa.selenium.WebElement;
-import org.openqa.selenium.interactions.Actions;
-import org.testng.Assert;
-import org.testng.annotations.Test;
-import pages.WebUniversityPage;
-import utilities.Driver;
-
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
+import org.openqa.selenium.*;
+import org.openqa.selenium.interactions.*;
+import org.testng.*;
+import org.testng.annotations.*;
+import pages.*;
+import utilities.*;
+import java.util.*;
 
 
 public class P01 {
