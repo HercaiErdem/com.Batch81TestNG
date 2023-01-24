@@ -1,13 +1,10 @@
 package tests.practice09;
 
-import org.openqa.selenium.Keys;
-import org.openqa.selenium.interactions.Actions;
-import org.testng.Assert;
-import org.testng.annotations.Test;
-import pages.SearchProductPage;
-import utilities.Driver;
-import utilities.TestBaseCross;
-import utilities.TestBaseRapor;
+import org.openqa.selenium.interactions.*;
+import org.testng.*;
+import org.testng.annotations.*;
+import pages.*;
+import utilities.*;
 
 public class SearchProductTest extends TestBaseRapor {
 
@@ -21,11 +18,11 @@ public class SearchProductTest extends TestBaseRapor {
     // 8. Aramayla ilgili ürünün ("blue top") görünür olduğunu doğrulayın
 
     SearchProductPage searchProductPage;
-    Actions actions =new Actions(Driver.getDriver());
+    Actions actions = new Actions(Driver.getDriver());
 
     @Test
     public void searchProductPage() throws InterruptedException {
-        extentTest=extentReports.createTest("automationexcercise","Web automation");
+        extentTest = extentReports.createTest("automationexcercise", "Web automation");
 
         // 1. Tarayıcıyı başlat
         // 2. 'http://automationexercise.com' url'sine gidin
@@ -53,9 +50,8 @@ public class SearchProductTest extends TestBaseRapor {
         // 8. Aramayla ilgili ürünün ("blue top") görünür olduğunu doğrulayın
         Thread.sleep(2000);
         actions.click(searchProductPage.viewProduct).perform();
-         Assert.assertTrue(searchProductPage.blueTop.isDisplayed());
+        Assert.assertTrue(searchProductPage.blueTop.isDisplayed());
         extentTest.pass("Aramayla ilgili ürünün (\"blue top\") görünür olduğu doğrulandı");
-
 
 
     }
