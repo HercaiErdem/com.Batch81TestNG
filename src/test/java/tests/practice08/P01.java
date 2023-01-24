@@ -1,14 +1,12 @@
 package tests.practice08;
 
-import org.openqa.selenium.Keys;
-import org.openqa.selenium.WebElement;
-import org.openqa.selenium.interactions.Actions;
-import org.testng.Assert;
-import org.testng.annotations.Test;
-import pages.HerOkuTestPage;
-import utilities.Driver;
-
-import java.util.List;
+import org.openqa.selenium.*;
+import org.openqa.selenium.interactions.*;
+import org.testng.*;
+import org.testng.annotations.*;
+import pages.*;
+import utilities.*;
+import java.util.*;
 
 public class P01 {
     //Go to https://testpages.herokuapp.com/styled/events/javascript-events.html
@@ -49,7 +47,8 @@ public class P01 {
         Thread.sleep(2000);
 
     }
-    @Test (dependsOnMethods = "test01")
+
+    @Test(dependsOnMethods = "test01")
     public void test02() {
         List<WebElement> clicked = herOkuTestPage.eventTriggered;
         Assert.assertEquals(clicked.size(), 11);
