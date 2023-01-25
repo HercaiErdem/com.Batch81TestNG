@@ -1,9 +1,9 @@
 package tests.ptactice05;
 
-import org.openqa.selenium.By;
-import org.testng.Assert;
-import org.testng.annotations.Test;
-import utilities.TestBaseBeforeMethodAfterMethod;
+import org.openqa.selenium.*;
+import org.testng.*;
+import org.testng.annotations.*;
+import utilities.*;
 
 public class P02 extends TestBaseBeforeMethodAfterMethod {
 
@@ -24,12 +24,11 @@ public class P02 extends TestBaseBeforeMethodAfterMethod {
         String actualText = driver.switchTo().alert().getText();
 // 4. Mesajın "I am an alert box!" olduğunu doğrulayın.
         String expectedText = "I am an alert box!";
-        Assert.assertEquals(actualText,expectedText);
+        Assert.assertEquals(actualText, expectedText);
 // 5. Açılır pencereyi kabul edin
         driver.switchTo().alert().accept();
 
         // istenenle beklenen ayni olursa Equals; iceriyor mu deseydi True False
-
 
 
     }
