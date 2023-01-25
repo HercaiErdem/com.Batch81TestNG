@@ -1,10 +1,9 @@
 package tests.ptactice05;
 
-import org.openqa.selenium.By;
-import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.ui.Select;
-import org.testng.annotations.Test;
-import utilities.TestBaseBeforeMethodAfterMethod;
+import org.openqa.selenium.*;
+import org.openqa.selenium.support.ui.*;
+import org.testng.annotations.*;
+import utilities.*;
 
 public class P01 extends TestBaseBeforeMethodAfterMethod {
     // ...Exercise3...
