@@ -1,9 +1,9 @@
 package tests.review;
 
-import org.testng.Assert;
-import org.testng.annotations.Test;
-import pages.AllertPage;
-import utilities.Driver;
+import org.testng.*;
+import org.testng.annotations.*;
+import pages.*;
+import utilities.*;
 
 public class TestNgIleAllertSoruCozumu {
     // 1. "http://webdriveruniversity.com/Popup-Alerts/index.html" adresine gidin
