@@ -1,10 +1,9 @@
 package tests.review;
 
-import org.openqa.selenium.By;
-import org.openqa.selenium.WebElement;
-import org.testng.Assert;
-import org.testng.annotations.Test;
-import utilities.TestBaseBeforeClassAfterClass;
+import org.openqa.selenium.*;
+import org.testng.*;
+import org.testng.annotations.*;
+import utilities.*;
 
 public class AllertSoruOrnegi extends TestBaseBeforeClassAfterClass {
     // 1. "http://webdriveruniversity.com/Popup-Alerts/index.html" adresine gidin
