@@ -1,12 +1,9 @@
 package tests.day17;
 
-import org.openqa.selenium.By;
-import org.openqa.selenium.Keys;
-import org.openqa.selenium.WebElement;
-import org.testng.Assert;
-import org.testng.annotations.Test;
-import org.testng.asserts.SoftAssert;
-import utilities.TestBaseBeforeClassAfterClass;
+import org.openqa.selenium.*;
+import org.testng.annotations.*;
+import org.testng.asserts.*;
+import utilities.*;
 
 public class C03_SoftAssert extends TestBaseBeforeClassAfterClass {
 
