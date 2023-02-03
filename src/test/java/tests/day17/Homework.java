@@ -28,20 +28,4 @@ public class Homework {
     // (krona)","Singapore (dollar)","Thailand (baht)"
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 }
