@@ -1,7 +1,7 @@
 package tests.day17;
 
-import org.testng.annotations.Test;
-import utilities.Driver;
+import org.testng.annotations.*;
+import utilities.*;
 
 public class C04_DriverIlkTest {
     @Test
@@ -15,5 +15,6 @@ getDriver() static method'unu kullanırız
         Driver.closeDriver();
         Driver.getDriver().get("https://hepsiburada.com");
         Driver.closeDriver();
+
     }
 }
