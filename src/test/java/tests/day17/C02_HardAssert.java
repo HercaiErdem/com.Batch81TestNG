@@ -1,12 +1,9 @@
 package tests.day17;
 
-import org.openqa.selenium.By;
-import org.openqa.selenium.Keys;
-import org.openqa.selenium.WebElement;
-import org.testng.Assert;
-import org.testng.annotations.Test;
-import utilities.Driver;
-import utilities.TestBaseBeforeMethodAfterMethod;
+import org.openqa.selenium.*;
+import org.testng.*;
+import org.testng.annotations.*;
+import utilities.*;
 
 public class C02_HardAssert extends TestBaseBeforeMethodAfterMethod {
 
@@ -28,7 +25,7 @@ public class C02_HardAssert extends TestBaseBeforeMethodAfterMethod {
         //2-title in Amazon içerdigini test edin
         Assert.assertTrue(driver.getTitle().contains("Amazon"));
         //3-arama kutusnun erişilebilir oldugunu tets edin
-        WebElement aramaKutusu= driver.findElement(By.xpath("//input[@id='twotabsearchtextbox']"));
+        WebElement aramaKutusu = driver.findElement(By.xpath("//input[@id='twotabsearchtextbox']"));
         Assert.assertTrue(aramaKutusu.isEnabled());
         //4-arama kutusuna Nuella yazıp aratın
         aramaKutusu.sendKeys("Nutella", Keys.ENTER);
