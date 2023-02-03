@@ -1,6 +1,7 @@
 package tests.day17;
 
 public class Homework {
+
     //Bir class oluşturun: DependsOnTest
     //https://www.amazon.com/ adresine gidin.
     //Test : Amazon ana sayfaya gittiginizi test edin
