@@ -7,16 +7,17 @@ import utilities.*;
 
 public class C02_HardAssert extends TestBaseBeforeMethodAfterMethod {
 
-    // Hard Assertions : JUNit'te öğrendiğimiz assertion ile aynıdır.
-    // Assert.assertTrue();  Assert.assertFalse();  Assert.assertEquals();
-    // Hard Assertions'da herhangi bir assertion failed olursa,
-    // test method'un çalışmasını durdurur ve kalan kodları yürütmez.(stop execution)
+    /*
+     Hard Assertions : JUNit'te öğrendiğimiz assertion ile aynıdır.
+     Assert.assertTrue();  Assert.assertFalse();  Assert.assertEquals();
+     Hard Assertions'da herhangi bir assertion failed olursa,
+     test method'un çalışmasını durdurur ve kalan kodları yürütmez.(stop execution)
 
-    // Soft Assert : Kullanabilmek için obje oluştururuz, oluşturduktan sonra obje ismi ile kullanırız,
-    // Herhangi bir hata verdiğinde test methodu
-    // çalışmaya devam eder, en sonda rapor verir. baslangıc  SoftAssert objeadı=new SoftAssert();
-    // bitis objeadı.assertAll();
-
+     Soft Assert : Kullanabilmek için obje oluştururuz, oluşturduktan sonra obje ismi ile kullanırız,
+     Herhangi bir hata verdiğinde test methodu
+     çalışmaya devam eder, en sonda rapor verir. baslangıc  SoftAssert objeadı=new SoftAssert();
+     bitis objeadı.assertAll();
+    */
 
     @Test
     public void test01() {
