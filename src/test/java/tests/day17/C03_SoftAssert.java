@@ -9,12 +9,14 @@ public class C03_SoftAssert extends TestBaseBeforeClassAfterClass {
 
     @Test
     public void test01() {
+
         /*
         SoftAssert başlangıç ve bitiş satırları arasındaki tüm assertion'ları yapıp
         bitiş olarak belirtmemiz gereken assertAll() metoduyla test metodumuzdaki bütün assertion'ları
         kontrol eder. Failed olan olursa assertion yaptığımız metodun sonuna yazdığımız mesajı bize
         konsolda verir
          */
+
         SoftAssert softAssert = new SoftAssert();
         //1-amazon anasayfaya gidin
         driver.get("https://amazon.com");
@@ -30,7 +32,9 @@ public class C03_SoftAssert extends TestBaseBeforeClassAfterClass {
         softAssert.assertTrue(sonuc.isDisplayed(), "SonucWE görüntülenemedi");
         //6-arama sonucunun Nutella içerdigini test edin
         softAssert.assertTrue(sonuc.getText().contains("Nutella"), "Nutella içermiyor");
+
         softAssert.assertAll();
+
         System.out.println("Hata varsa burası calismaz");
 
 
