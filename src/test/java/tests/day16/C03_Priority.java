@@ -1,9 +1,10 @@
 package tests.day16;
 
-import org.testng.annotations.Test;
-import utilities.TestBaseBeforeMethodAfterMethod;
+import org.testng.annotations.*;
+import utilities.*;
 
 public class C03_Priority extends TestBaseBeforeMethodAfterMethod {
+
     // Testlerimizi çalıştırırken istediğimiz sıraya göre çalışmasını istersek
     //priority methodunu kullanırız
     // priotry() yazmadigimiz test ler priotry yazdigimiz testlerden once calisir  cunku o default deger alir
