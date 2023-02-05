@@ -14,7 +14,8 @@ public class C03_Priority extends TestBaseBeforeMethodAfterMethod {
         driver.get("https://www.youtube.com");
     }
 
-    public void bestbuyTest() { // Burayi 0 kabul eder ve ilk bu test calisir
+    public void bestbuyTest() {
+        // Burayi 0 kabul eder ve ilk bu test calisir
         driver.get("https://www.bestbuy.com");
 
     }
