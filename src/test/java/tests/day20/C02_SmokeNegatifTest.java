@@ -1,12 +1,11 @@
 package tests.day20;
 
-import org.openqa.selenium.Keys;
-import org.openqa.selenium.interactions.Actions;
-import org.testng.Assert;
-import org.testng.annotations.Test;
-import pages.HmcPage;
-import utilities.ConfigReader;
-import utilities.Driver;
+import org.openqa.selenium.*;
+import org.openqa.selenium.interactions.*;
+import org.testng.*;
+import org.testng.annotations.*;
+import pages.*;
+import utilities.*;
 
 public class C02_SmokeNegatifTest {
     @Test
@@ -26,6 +25,7 @@ public class C02_SmokeNegatifTest {
         //Sayfayı kapatınız
         Driver.closeDriver();
     }
+
     @Test
     public void yanlisSifre() { //2.Seneryo: Doğru kullanıcı, Yanlış Şifre
         // https://www.hotelmycamp.com/ adresine git
@@ -43,6 +43,7 @@ public class C02_SmokeNegatifTest {
         //Sayfayı kapatınız
         Driver.closeDriver();
     }
+
     @Test
     public void yanlisKullaniciSifre() { // 3. Senoryo: Yanlış kullanıcı, Yanlış şifre
         // https://www.hotelmycamp.com/ adresine git
