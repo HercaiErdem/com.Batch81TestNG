@@ -9,7 +9,10 @@ import utilities.*;
 
 public class C02_SmokeNegatifTest {
     @Test
-    public void yanlisKullanici() { // 1.Senoryo: yanlış kullanıcı, doğru şifre
+    public void yanlisKullanici() {
+
+        // 1.Senoryo: yanlış kullanıcı, doğru şifre
+
         // https://www.hotelmycamp.com/ adresine git
         Driver.getDriver().get(ConfigReader.getProperty("hmcUrl"));
         HmcPage hmcPage = new HmcPage();
