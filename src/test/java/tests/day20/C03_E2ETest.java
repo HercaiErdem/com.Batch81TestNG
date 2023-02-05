@@ -44,7 +44,7 @@ public class C03_E2ETest {
                 .sendKeys(faker.internet().emailAddress()).sendKeys(Keys.TAB).sendKeys("skajdlaksjdaasd")
                 .sendKeys(Keys.TAB).sendKeys(Keys.SPACE).sendKeys(Keys.TAB).sendKeys(Keys.TAB)
                 .sendKeys(Keys.ENTER).perform();
-    //    hmcPage.saveButonu.click();
+        //    hmcPage.saveButonu.click();
         //“RoomReservation was inserted successfully” textinin göründüğünü test edin.
         Thread.sleep(2000);
         Assert.assertTrue(hmcPage.roomReservationText.isDisplayed());
