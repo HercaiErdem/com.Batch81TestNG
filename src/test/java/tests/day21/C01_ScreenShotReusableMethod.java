@@ -1,16 +1,17 @@
 package tests.day21;
 
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
-import org.openqa.selenium.Keys;
-import org.testng.annotations.Test;
-import pages.AmazonPage;
-import utilities.ConfigReader;
-import utilities.Driver;
-import utilities.ReusableMethods;
-import java.io.IOException;
+import org.apache.logging.log4j.*;
+import org.openqa.selenium.*;
+import org.testng.annotations.*;
+import pages.*;
+import utilities.*;
+
+import java.io.*;
+
 public class C01_ScreenShotReusableMethod {
+
     private static Logger logger = LogManager.getLogger(C01_ScreenShotReusableMethod.class.getName());
+
     @Test
     public void test01() throws IOException {
         //Hepsiburada sayfasına gidiniz
@@ -20,6 +21,7 @@ public class C01_ScreenShotReusableMethod {
         //Sayfayı kapatınız
         Driver.closeDriver();
     }
+
     @Test
     public void test02() throws IOException {
         //Amazon sayfasına gidiniz
@@ -28,6 +30,6 @@ public class C01_ScreenShotReusableMethod {
         //Nutella aratınız
         amznPage.aramaKutusu.sendKeys("Nutella", Keys.ENTER);
         //Arama sonuc yazısı Webelementinin resmini alınız
-        ReusableMethods.getScreenshotWebElement("AramaSonucWE",amznPage.aramaSonucWE);
+        ReusableMethods.getScreenshotWebElement("AramaSonucWE", amznPage.aramaSonucWE);
     }
 }
