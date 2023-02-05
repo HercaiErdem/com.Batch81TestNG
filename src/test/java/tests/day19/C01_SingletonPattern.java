@@ -1,6 +1,6 @@
 package tests.day19;
 
-import org.testng.annotations.Test;
+import org.testng.annotations.*;
 
 public class C01_SingletonPattern {
 
@@ -16,6 +16,4 @@ public class C01_SingletonPattern {
 
 
     }
-
-
 }
