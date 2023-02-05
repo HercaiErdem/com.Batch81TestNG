@@ -18,14 +18,14 @@ public class C01_DataProvider {
 
     @Test(dataProvider = "aranacakKelimeler")
     public void test02(String kelimeler) {
-           AmazonPage amazonPage = new AmazonPage();
+        AmazonPage amazonPage = new AmazonPage();
         //amazona gidelim
         Driver.getDriver().get(ConfigReader.getProperty("amazonUrl"));
         //java, selenium, samsung ve iphone icin arama yapalim
-         amazonPage.aramaKutusu.sendKeys(kelimeler, Keys.ENTER);
+        amazonPage.aramaKutusu.sendKeys(kelimeler, Keys.ENTER);
         //sonuclarin aradigimiz kelime icerdigini test edelim
-          String actualKelime = amazonPage.aramaSonucWE.getText();
-          Assert.assertTrue(actualKelime.contains(kelimeler));
+        String actualKelime = amazonPage.aramaSonucWE.getText();
+        Assert.assertTrue(actualKelime.contains(kelimeler));
     }
 
     @Test(dependsOnMethods = "test02")
