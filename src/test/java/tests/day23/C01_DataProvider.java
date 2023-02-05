@@ -1,12 +1,10 @@
 package tests.day23;
 
-import org.openqa.selenium.Keys;
-import org.testng.Assert;
-import org.testng.annotations.DataProvider;
-import org.testng.annotations.Test;
-import pages.AmazonPage;
-import utilities.ConfigReader;
-import utilities.Driver;
+import org.openqa.selenium.*;
+import org.testng.*;
+import org.testng.annotations.*;
+import pages.*;
+import utilities.*;
 
 public class C01_DataProvider {
 
