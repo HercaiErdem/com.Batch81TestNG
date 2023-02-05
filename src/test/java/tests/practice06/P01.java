@@ -13,9 +13,9 @@ public class P01 {
     @Test
     public void test01() {
         // Go to URL : http://www.dhtmlgoodies.com/scripts/drag-drop-custom/demo-drag-drop-3.html
-        // Fill in capitals by country.
         Driver.getDriver().get("http://www.dhtmlgoodies.com/scripts/drag-drop-custom/demo-drag-drop-3.html");
 
+        // Fill in capitals by country.
         DhtmlgoodiesPage dhtmlgoodiesPage = new DhtmlgoodiesPage();
         Actions actions = new Actions(Driver.getDriver());
         actions.dragAndDrop(dhtmlgoodiesPage.oslo, dhtmlgoodiesPage.norway)
