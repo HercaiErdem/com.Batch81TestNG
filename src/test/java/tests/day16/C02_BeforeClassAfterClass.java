@@ -1,7 +1,7 @@
 package tests.day16;
 
-import org.testng.annotations.Test;
-import utilities.TestBaseBeforeClassAfterClass;
+import org.testng.annotations.*;
+import utilities.*;
 
 public class C02_BeforeClassAfterClass extends TestBaseBeforeClassAfterClass {
     @Test
