@@ -30,7 +30,10 @@ public class C02_SmokeNegatifTest {
     }
 
     @Test
-    public void yanlisSifre() { //2.Seneryo: Doğru kullanıcı, Yanlış Şifre
+    public void yanlisSifre() {
+
+        //2.Seneryo: Doğru kullanıcı, Yanlış Şifre
+
         // https://www.hotelmycamp.com/ adresine git
         Driver.getDriver().get(ConfigReader.getProperty("hmcUrl"));
         HmcPage hmcPage = new HmcPage();
