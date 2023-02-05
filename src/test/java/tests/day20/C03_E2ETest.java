@@ -1,19 +1,18 @@
 package tests.day20;
 
-import com.github.javafaker.Faker;
-import org.openqa.selenium.Keys;
-import org.openqa.selenium.interactions.Actions;
-import org.testng.Assert;
-import org.testng.annotations.Test;
-import pages.HmcPage;
-import utilities.ConfigReader;
-import utilities.Driver;
+import com.github.javafaker.*;
+import org.openqa.selenium.*;
+import org.openqa.selenium.interactions.*;
+import org.testng.*;
+import org.testng.annotations.*;
+import pages.*;
+import utilities.*;
 
 public class C03_E2ETest {
     @Test
     public void E2ETest() throws InterruptedException {
-        //https://www.hotelmycamp.com adresine git.
 
+        //https://www.hotelmycamp.com adresine git.
         Driver.getDriver().get(ConfigReader.getProperty("hmcUrl"));
         HmcPage hmcPage = new HmcPage();
         hmcPage.login.click();
