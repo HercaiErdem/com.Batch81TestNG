@@ -4,7 +4,7 @@
     <test name="Package">
         <packages>
             <package name="tests.practice06"/>
-            <package name="tests.ptactice05"/>
+            <package name="tests.practice05"/>
         </packages>
     </test>
 </suite>

@@ -1,4 +1,4 @@
-package tests.ptactice05;
+package tests.practice05;
 
 import org.openqa.selenium.*;
 import org.openqa.selenium.support.ui.*;
