@@ -2,7 +2,6 @@ package tests.day18;
 
 import org.testng.annotations.*;
 import utilities.*;
-import utilities.*;
 
 public class C02_ConfigurationProperties {
 
