@@ -18,7 +18,7 @@ public class C01_PageClassFacebookTest {
         FacebookPage facebookPage = new FacebookPage();
         //Faker class’ini kullanarak email ve sifre degerlerini
         Faker faker = new Faker();
-        //yazdirip, giris butonuna basin
+        //yazdirip giris butonuna basin
         facebookPage.email.sendKeys(faker.internet().emailAddress());
         facebookPage.sifre.sendKeys(faker.internet().password());
         facebookPage.login.click();
