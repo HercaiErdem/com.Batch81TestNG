@@ -48,7 +48,7 @@ public class C01RaporluTest extends TestBaseRapor {
          */
 
         //eğer hata raporu alırsak ve raporda resmi görüntülemek istersek rapor üzerine sağ click
-         //open, explorer secip resimli raporu görüntüleyebiliriz.
+        //open, explorer secip resimli raporu görüntüleyebiliriz.
 
         /*
     Hatanin resmini RAPORDA görmek istersek  target altinda Rapor icinde yazdirilan resmin uzernie sag tiklayin --->
