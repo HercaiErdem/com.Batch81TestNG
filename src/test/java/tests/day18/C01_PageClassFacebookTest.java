@@ -1,10 +1,10 @@
 package tests.day18;
 
-import com.github.javafaker.Faker;
-import org.testng.Assert;
-import org.testng.annotations.Test;
-import pages.FacebookPage;
-import utilities.Driver;
+import com.github.javafaker.*;
+import org.testng.*;
+import org.testng.annotations.*;
+import pages.*;
+import utilities.*;
 
 public class C01_PageClassFacebookTest {
 
