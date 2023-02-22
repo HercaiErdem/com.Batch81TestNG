@@ -77,9 +77,9 @@ public class US010_TC001 extends TestBaseRapor {
         extentTest.info("Select All kutusuna basildi");
 
 
-        //Tum renklerin seçildiği doğrulanır
+        //   Tum renklerin seçildiği doğrulanır
         //   wait.until(ExpectedConditions.visibilityOf(hercaiPage.allColorSelected));
-        //  Assert.assertTrue(hercaiPage.allColorSelected.isDisplayed());
+        //   Assert.assertTrue(hercaiPage.allColorSelected.isDisplayed());
         List<WebElement> acutualColorResult = hercaiPage.allColorSelected;
         Assert.assertTrue(acutualColorResult.size() > 0);
         extentTest.pass("Tum renklerin secildigi dogrulandi");
